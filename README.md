@@ -53,7 +53,12 @@ An example of custom UIBarButtonItem
  
 ## Demo
  
- ![image](https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/02.png)
- 
- ![image](https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/03.png)
- 
+ <p align="center">
+<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/02.png" width="375">
+</p>
+<br>
+
+<p align="center">
+<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/03.png" width="665">
+</p>
+<br>

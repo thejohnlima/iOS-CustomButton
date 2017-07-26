@@ -4,6 +4,7 @@ An example of custom UIBarButtonItem
 * Xcode 8
 
  ![image](https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/01.png)
+ ![image](https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/02.png)
  
 ## Extension of UIBarButtonItem
  
@@ -32,33 +33,50 @@ An example of custom UIBarButtonItem
 }
  ```
  
- ## How to use
- 
+ ## How to use with UINavigationItem
  ```
- var r2Button = UIBarButtonItem()
+ fileprivate var r2Button = UIBarButtonItem()
 
  override func viewDidLoad() {
      super.viewDidLoad()
 
      r2Button = UIBarButtonItem.custom(
-        with: #imageLiteral(resourceName: "R2-D2"),
+        with: UIImage(named: "R2-D2"),
         target: self,
-        action: #selector(showDetails(sender:)),
-        controlEvents: .touchUpInside
+        action: #selector(showDetails(sender:))
     )
 
     navigationItem.rightBarButtonItem = r2Button
  }
  ```
  
+## How to use with UIToolbar
+```
+@IBOutlet fileprivate weak var toolBar: UIToolbar!
+
+ override func viewDidLoad() {
+     super.viewDidLoad()
+
+     logoButton = UIBarButtonItem.custom(
+        with: UIImage(named: "StarWars"),
+        frame: CGRect(x: 0, y: 0, width: 54, height: 54),
+        target: self,
+        action: #selector(showDetails(sender:))
+    )
+
+    let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+    toolBar.setItems([flexibleSpace, logoButton, flexibleSpace], animated: true)
+ }
+```
+
 ## Demo
  
  <p align="center">
-<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/02.png" width="375">
+<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/03.png" width="375">
 </p>
 <br>
 
 <p align="center">
-<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/03.png" width="665">
+<img src="https://github.com/limadeveloper/iOS-CustomButton/blob/master/Docs/Images/04.png" width="665">
 </p>
 <br>

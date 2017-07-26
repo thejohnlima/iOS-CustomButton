@@ -19,6 +19,6 @@ class CustomView: UIView {
         imageView.clipsToBounds = true
         imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        addSubview(imageView)
+        insertSubview(imageView, at: 0)
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 
 extension UIBarButtonItem {
     
-    static func custom(with image: UIImage, frame: CGRect = CGRect(x: 0, y: 0, width: 36, height: 36), isRounded: Bool = true, borderWidth: CGFloat = 0, borderColor: UIColor = .white, target: AnyObject?, action: Selector, controlEvents: UIControlEvents = .touchUpInside, showsTouchWhenHighlighted: Bool = true) -> UIBarButtonItem {
+    static func custom(with image: UIImage?, frame: CGRect = CGRect(x: 0, y: 0, width: 36, height: 36), isRounded: Bool = true, borderWidth: CGFloat = 0, borderColor: UIColor = .white, target: AnyObject?, action: Selector, controlEvents: UIControlEvents = .touchUpInside, showsTouchWhenHighlighted: Bool = true) -> UIBarButtonItem {
         
         let button = UIButton(frame: frame)
         button.setBackgroundImage(image, for: .normal)

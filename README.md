@@ -8,7 +8,7 @@ An example of custom UIBarButtonItem
  
 ## Extension of UIBarButtonItem
  
- ```
+ ```swift
  extension UIBarButtonItem {
     
     static func custom(with image: UIImage, frame: CGRect = CGRect(x: 0, y: 0, width: 36, height: 36), isRounded: Bool = true, borderWidth: CGFloat = 0, borderColor: UIColor = .white, target: AnyObject?, action: Selector, controlEvents: UIControlEvents = .touchUpInside, showsTouchWhenHighlighted: Bool = true) -> UIBarButtonItem {
@@ -34,7 +34,8 @@ An example of custom UIBarButtonItem
  ```
  
  ## How to use with UINavigationItem
- ```
+ 
+ ```swift
  fileprivate var r2Button = UIBarButtonItem()
 
  override func viewDidLoad() {
@@ -51,7 +52,8 @@ An example of custom UIBarButtonItem
  ```
  
 ## How to use with UIToolbar
-```
+
+```swift
 @IBOutlet fileprivate weak var toolBar: UIToolbar!
 
  override func viewDidLoad() {
